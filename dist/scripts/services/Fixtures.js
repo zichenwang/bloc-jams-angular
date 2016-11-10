@@ -1,6 +1,7 @@
  (function () {
      function Fixtures() {
          var Fixtures = {};
+
          var albumMarconi = {
              title: 'The Telephone',
              artist: 'Guglielmo Marconi',
@@ -68,6 +69,17 @@
 
          Fixtures.getAlbum = function () {
              return albumPicasso;
+         };
+
+         Fixtures.getCollection = function (numberOfAlbums) {
+             var res = [];
+
+             while (numberOfAlbums > 0) {
+                 res.push(albumPicasso);
+                 numberOfAlbums--;
+             }
+
+             return res;
          };
 
          return Fixtures;
