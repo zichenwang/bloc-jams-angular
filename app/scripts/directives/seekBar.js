@@ -55,6 +55,12 @@
                          $document.unbind('mouseup.thumb');
                      });
                  };
+
+                 scope.thumbStyle = function () {
+                     return {
+                         left: scope.value + '%'
+                     };
+                 };
              }
          };
      }
