@@ -78,7 +78,7 @@
 
                  scope.thumbStyle = function () {
                      return {
-                         left: scope.value + '%'
+                         left: percentString()
                      };
                  };
              }
